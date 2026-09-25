@@ -1,0 +1,13 @@
+title: Animesh Ahilya's Apps
+description: Free, accessible Android apps. No ads, no tracking.
+author: Animesh Ahilya
+github_user: animeshahilya
+lang: en
+collections:
+  apps:
+    output: true
+    permalink: /:name/
+defaults:
+  - scope: { type: apps }
+    values: { layout: app }
+exclude: [README.md]

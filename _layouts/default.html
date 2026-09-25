@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% if page.app_name %}{% assign t = page.app_name %}{% else %}{% assign t = site.title %}{% endif %}
+<title>{{ t }}</title>
+<meta name="description" content="{{ page.tagline | default: site.description }}">
+<meta property="og:title" content="{{ t }}">
+<meta property="og:description" content="{{ page.tagline | default: site.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<div class="wrap">
+{{ content }}
+<footer>
+  <p>Made by {{ site.author }}. All apps are free, with no ads and no tracking. <a href="https://github.com/{{ site.github_user }}">GitHub profile</a>.</p>
+</footer>
+</div>
+</body>
+</html>

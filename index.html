@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<header>
+  <h1>{{ site.title }}</h1>
+  <p class="lead">{{ site.description }} Pick an app to learn more and install it.</p>
+</header>
+<main id="main">
+  <ul class="apps">
+  {% assign apps = site.apps | sort: "order" %}
+  {% for app in apps %}
+    <li>
+      <h2><a href="{{ app.url | relative_url }}">{{ app.app_name }}</a></h2>
+      <p>{{ app.tagline }}</p>
+      <p class="meta">Version {{ app.version }}. Needs Android {{ app.android }} or newer.</p>
+    </li>
+  {% endfor %}
+  </ul>
+</main>

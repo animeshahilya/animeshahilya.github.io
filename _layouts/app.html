@@ -1,0 +1,57 @@
+---
+layout: default
+---
+{% assign repo = "https://github.com/" | append: page.releases_repo %}
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">All apps</a></nav>
+<header>
+  <h1>{{ page.app_name }}</h1>
+  <p class="lead">{{ page.summary | default: page.tagline }}</p>
+  <div class="buttons">
+    <a class="btn btn-primary" href="#install">How to install</a>
+    <a class="btn btn-secondary" href="{{ repo }}/releases/latest">Latest release on GitHub</a>
+  </div>
+  <p class="version">Version {{ page.version }}. Needs Android {{ page.android }} or newer.{% if page.license %} {{ page.license }}.{% endif %}</p>
+</header>
+
+<main id="main">
+{% for group in page.feature_groups %}
+<section aria-labelledby="g{{ forloop.index }}">
+  <h2 id="g{{ forloop.index }}">{{ group.title }}</h2>
+  <ul class="grid">
+  {% for f in group.features %}
+    <li><h3>{{ f.title }}</h3><p>{{ f.text }}</p></li>
+  {% endfor %}
+  </ul>
+</section>
+{% endfor %}
+
+<section aria-labelledby="install">
+  <h2 id="install">How to install</h2>
+  <p>Choose one way. The first one keeps the app up to date for you.</p>
+  <div class="card">
+    <h3>Option 1: Obtainium (recommended, updates automatically)</h3>
+    <p>Obtainium is a free app that installs apps from GitHub and keeps them updated.</p>
+    <ol class="steps">
+      <li>Install <a href="https://github.com/ImranR98/Obtainium/releases/latest">Obtainium</a>.</li>
+      <li>On your phone, open this link: <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/{{ repo }}">Add {{ page.app_name }} to Obtainium</a>. Or in Obtainium, tap “Add App” and paste <code>{{ repo }}</code>.</li>
+      <li>Tap Install.</li>
+    </ol>
+  </div>
+  <div class="card">
+    <h3>Option 2: From GitHub</h3>
+    <ol class="steps">
+      <li>Open the <a href="{{ repo }}/releases/latest">latest release</a>.</li>
+      <li>Under “Assets”, download the file ending in <code>.apk</code>.</li>
+      <li>Open the file. If Android asks, allow your browser to install apps.</li>
+    </ol>
+  </div>
+</section>
+
+<div class="body">{{ content }}</div>
+
+<section aria-labelledby="help">
+  <h2 id="help">Help and feedback</h2>
+  <p>{% if page.feedback_url %}<a href="{{ page.feedback_url }}">Report a problem or suggest an idea</a>.{% endif %}
+  See every change in the <a href="{{ repo }}/releases">release notes</a>.{% if page.source_url %} The <a href="{{ page.source_url }}">source code</a> is on GitHub.{% endif %}</p>
+</section>
+</main>
