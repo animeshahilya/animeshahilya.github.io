@@ -3,7 +3,7 @@ app_name: Tarang
 order: 2
 tagline: Indian radio, live TV and podcasts in one fast, accessible app. No ads, no sign-up.
 summary: Tarang brings Indian radio stations, live TV channels and podcasts together in one fast app. It is built to work fully with TalkBack, and has no ads, no sign-up and no tracking.
-version: "1.9.4"
+version: "1.9.5"
 android: "10"
 releases_repo: animeshahilya/tarang-releases
 feedback_url: https://github.com/animeshahilya/tarang-feedback/issues
