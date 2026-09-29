@@ -3,7 +3,7 @@ app_name: eSpeak NG for Android
 order: 1
 tagline: A free, offline speech engine that speaks like NVDA, with better Hindi and Indian-language voices.
 summary: A free, offline speech engine for Android. It speaks the way NVDA does and adds better Hindi and Indian-language voices. It works with TalkBack and any app that reads text aloud.
-version: "2.5.2"
+version: "2.6"
 android: "8.0"
 license: Free and open source under GPL v3
 releases_repo: animeshahilya/espeak-ng
