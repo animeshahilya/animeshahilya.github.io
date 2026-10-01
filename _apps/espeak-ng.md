@@ -14,6 +14,7 @@ feature_groups:
     features:
       - { title: Sounds like NVDA, text: "It uses the same voices and the same None, Some, Most and All symbol levels, so your phone sounds like your computer." }
       - { title: Made for Indian languages, text: "Better Hindi, Bengali, Marathi and Urdu, plus fixes for Tamil, Telugu, Gujarati, Punjabi, Malayalam and more." }
+      - { title: Natural voices, text: "Optional human-sounding voices, including 42 for Indian languages like Hindi, Tamil and Bengali and dialects like Bhojpuri and Chhattisgarhi. They speak offline once downloaded and stay off until you turn them on." }
       - { title: Reads Hinglish, text: "English voices can read Hindi typed in English letters, like “aap kaise ho”, with proper Hindi pronunciation. (Beta)" }
       - { title: Fast and fully offline, text: "It needs no internet and sends no data anywhere. Speech starts instantly, even on older phones." }
       - { title: Over 100 languages, text: "You also get 82 character voices from the community collection." }
