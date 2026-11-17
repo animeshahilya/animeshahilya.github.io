@@ -3,7 +3,7 @@ app_name: Tarang
 order: 2
 tagline: Indian radio, live TV and podcasts in one fast, accessible app. No ads, no sign-up.
 summary: Tarang brings Indian radio stations, live TV channels and podcasts together in one fast app. It is built to work fully with TalkBack, and has no ads, no sign-up and no tracking.
-version: "2.1.4"
+version: "2.1.5"
 android: "10"
 releases_repo: animeshahilya/tarang-releases
 feedback_url: https://github.com/animeshahilya/tarang-feedback/issues
@@ -13,6 +13,8 @@ feature_groups:
       - { title: Radio, text: "Thousands of stations, including All India Radio with today's schedule and programme reminders, FM and stations from Indian communities around the world." }
       - { title: Live TV, text: "Indian news, music and regional channels, streamed live." }
       - { title: Podcasts, text: "Search, follow and download podcasts, and get told when a new episode is out." }
+      - { title: Songs, text: "Sangeet: songs, albums, playlists and artists from JioSaavn, with favourites, downloads and music that keeps playing. No account and no ads." }
+      - { title: Name this song, text: "Find out which song a radio station or TV channel is playing, even when it doesn't say." }
       - { title: YouTube, text: "Play and download YouTube videos inside the app." }
       - { title: Your music, text: "Play the music and videos on your phone by song, folder, album or artist, with lyrics, crossfade, an Up Next queue and the option to hear videos as audio only." }
       - { title: Record, text: "Record any radio station or TV channel while you listen, or schedule a recording for later." }
